@@ -39,3 +39,4 @@ C:\Users\ED\source\ETicaretAPI\Presentation\ETicaretAPI.API\bin\Debug\net6.0\Npg
 C:\Users\ED\source\ETicaretAPI\Presentation\ETicaretAPI.API\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
 C:\Users\ED\source\ETicaretAPI\Presentation\ETicaretAPI.API\bin\Debug\net6.0\Humanizer.dll
 C:\Users\ED\source\ETicaretAPI\Presentation\ETicaretAPI.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\ED\source\ETicaretAPI\Presentation\ETicaretAPI.API\bin\Debug\net6.0\Microsoft.Extensions.Configuration.dll
