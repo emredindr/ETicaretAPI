@@ -6,6 +6,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ETicaretAPI.Persistence.Contexts;
+using ETicaretAPI.Persistence.Repositories;
+using ETicaretAPI.Application.Repositories;
 
 namespace ETicaretAPI.Persistence
 {
@@ -14,7 +16,13 @@ namespace ETicaretAPI.Persistence
         public static void AddPersistanceServices(this IServiceCollection services) 
         {
             services.AddDbContext<ETicaretAPIDbContext>(option =>option.UseNpgsql(Configuration.ConnectionString));
-           
+            services.AddScoped<ICustomerReadRepository, CustomerReadRepository>();
+            services.AddScoped<ICustomerWriteRepository, CustomerWriteRepository>();
+            services.AddScoped<IOrderReadRepository, OrderReadRepository>();
+            services.AddScoped<IOrderWriteRepository, OrderWriteRepository>();
+            services.AddScoped<IProductReadRepository, ProductReadRepository>();
+            services.AddScoped<IProductWriteRepository, ProductWriteRepository>();
+
 
         } 
     }
